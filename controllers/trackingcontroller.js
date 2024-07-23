@@ -1,3 +1,5 @@
+const { db } = require('../firebase');
+
 const trackOrder = async (req, res) => {
     const { orderId } = req.body;
     const orderDoc = await db.collection('orders').doc(orderId).get();
