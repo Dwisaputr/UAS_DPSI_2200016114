@@ -1,3 +1,5 @@
+const { db } = require('../firebase');
+
 const processPayment = async (req, res) => {
   const { orderId, paymentDetails } = req.body;
   // Here you would integrate with a payment gateway
